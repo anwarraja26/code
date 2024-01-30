@@ -1,0 +1,679 @@
+[29-01-2024 05:47 PM] : <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .book {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Online Book Store</h1>
+    </header>
+
+    <section>
+        <div class="book">
+            <img src="book1.jpg" alt="Book Cover 1">
+            <h2>Book Title 1</h2>
+            <p>Author: Author Name 1</p>
+        </div>
+
+        <div class="book">
+            <img src="book2.jpg" alt="Book Cover 2">
+            <h2>Book Title 2</h2>
+            <p>Author: Author Name 2</p>
+        </div>
+
+        <!-- Add more books as needed -->
+
+        <form>
+            <label for="email">Subscribe to our newsletter:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Book Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+[29-01-2024 06:17 PM] : <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer & Designer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello, I'm Your Name, a passionate web developer and designer. Explore my work and feel free to get in touch!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I have a background in web development and design. My skills include HTML, CSS, JavaScript, and more. I love creating engaging and responsive websites that provide a great user experience.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of the project.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of the project.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me. Use the form below or contact me through the provided information.</p>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+[29-01-2024 06:17 PM] : body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+[29-01-2024 07:12 PM] Anwar Raja: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #quiz-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .option {
+            margin: 5px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #d0d0d0;
+        }
+
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #score {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div class="question">1. What is the capital of France?</div>
+        <div class="options">
+            <div class="option" onclick="checkAnswer(1)">a) Paris</div>
+            <div class="option" onclick="checkAnswer(0)">b) Rome</div>
+            <div class="option" onclick="checkAnswer(0)">c) Berlin</div>
+        </div>
+        <div class="feedback" id="feedback-1"></div>
+
+        <!-- Add more questions and options as needed -->
+
+        <div id="score"></div>
+    </div>
+
+    <script>
+        let score = 0;
+
+        function checkAnswer(correctOption) {
+            if (correctOption === 1) {
+                score++;
+                document.getElementById("feedback-1").innerText = "Correct!";
+            } else {
+                document.getElementById("feedback-1").innerText = "Incorrect. The correct answer is a) Paris.";
+            }
+            document.getElementById("score").innerText = Your score: ${score};
+        }
+    </script>
+</body>
+</html>
+[29-01-2024 07:14 PM] Anwar Raja: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form id="registrationForm" onsubmit="validateForm(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <span id="usernameError" class="error"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="passwordError" class="error"></span><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span id="confirmPasswordError" class="error"></span><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        function validateForm(event) {
+            // Reset error messages
+            document.getElementById('usernameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('passwordError').textContent = '';
+            document.getElementById('confirmPasswordError').textContent = '';
+
+            // Get form values
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Validate username
+            if (username.length < 4) {
+                document.getElementById('usernameError').textContent = 'Username must be at least 4 characters long.';
+                event.preventDefault();
+            }
+
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Enter a valid email address.';
+                event.preventDefault();
+            }
+
+            // Validate password
+            if (password.length < 6) {
+                document.getElementById('passwordError').textContent = 'Password must be at least 6 characters long.';
+                event.preventDefault();
+            }
+
+            // Validate password confirmation
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').textContent = 'Passwords do not match.';
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>
+[29-01-2024 07:16 PM] Anwar Raja: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Calculator</title>
+    <style>
+        input, select, button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hash Calculator</h2>
+    <label for="num1">Enter Number 1:</label>
+    <input type="number" id="num1" required>
+
+    <label for="num2">Enter Number 2:</label>
+    <input type="number" id="num2" required>
+
+    <label for="operation">Select Operation:</label>
+    <select id="operation">
+        <option value="add">Addition</option>
+        <option value="subtract">Subtraction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="divide">Division</option>
+    </select>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h3>Result:</h3>
+    <div id="result"></div>
+
+    <script>
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        function subtract(num1, num2) {
+            return num1 - num2;
+        }
+
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+
+        function divide(num1, num2) {
+            if (num2 !== 0) {
+                return num1 / num2;
+            } else {
+                return "Cannot divide by zero";
+            }
+        }
+
+        function calculate() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const operation = document.getElementById('operation').value;
+
+            let result;
+
+            switch (operation) {
+                case 'add':
+                    result = add(num1, num2);
+                    break;
+                case 'subtract':
+                    result = subtract(num1, num2);
+                    break;
+                case 'multiply':
+                    result = multiply(num1, num2);
+                    break;
+                case 'divide':
+                    result = divide(num1, num2);
+                    break;
+                default:
+                    result = "Invalid operation";
+            }
+
+            document.getElementById('result').textContent = Result: ${result};
+        }
+    </script>
+</body>
+</html>
+[29-01-2024 07:17 PM] Anwar Raja: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <style>
+        input, button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Our Online Bookstore</h2>
+    <label for="membershipLevel">Enter Your Membership Level:</label>
+    <input type="text" id="membershipLevel" placeholder="Silver, Gold, Platinum">
+
+    <button onclick="calculateDiscount()">Calculate Discount</button>
+
+    <h3>Discount Percentage:</h3>
+    <div id="discountPercentage"></div>
+
+    <script>
+        function calculateDiscount() {
+            const membershipLevelInput = document.getElementById('membershipLevel').value.toLowerCase();
+            let discountPercentage;
+
+            switch (membershipLevelInput) {
+                case 'silver':
+                    discountPercentage = 5;
+                    break;
+                case 'gold':
+                    discountPercentage = 10;
+                    break;
+                case 'platinum':
+                    discountPercentage = 15;
+                    break;
+                default:
+                    discountPercentage = 0;
+            }
+
+            document.getElementById('discountPercentage').textContent = Discount Percentage: ${discountPercentage}%;
+        }
+    </script>
+</body>
+</html>
+[29-01-2024 07:19 PM] Anwar Raja: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        input, button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Temperature Converter</h2>
+    
+    <label for="celsiusInput">Enter Temperature in Celsius:</label>
+    <input type="number" id="celsiusInput" placeholder="Enter temperature" required>
+
+    <button onclick="convertTemperature()">Convert to Fahrenheit</button>
+
+    <h3>Converted Temperature:</h3>
+    <div id="convertedTemperature"></div>
+
+    <script>
+        function convertTemperature() {
+            const celsiusInput = parseFloat(document.getElementById('celsiusInput').value);
+            
+            if (!isNaN(celsiusInput)) {
+                const fahrenheit = (celsiusInput * 9/5) + 32;
+                document.getElementById('convertedTemperature').textContent = Converted Temperature: ${fahrenheit.toFixed(2)} °F;
+            } else {
+                document.getElementById('convertedTemperature').textContent = 'Please enter a valid temperature in Celsius.';
+            }
+        }
+    </script>
+</body>
+</html>
+[29-01-2024 07:21 PM] Anwar Raja: function divideNumbers(numerator, denominator) {
+    if (denominator === 0) {
+        throw new Error("Cannot divide by zero");
+    }
+
+    return numerator / denominator;
+}
+
+// Example usage:
+try {
+    const result = divideNumbers(10, 2);
+    console.log(Result: ${result});
+    
+    const invalidResult = divideNumbers(8, 0); // This will throw an exception
+    console.log(This line won't be executed.);
+} catch (error) {
+    console.error(Error: ${error.message});
+}
+[29-01-2024 07:21 PM] Anwar Raja: <html>
+<head>
+<title>simple Animation</title>
+<style>
+.animated-diamond {
+width: 50px;
+height: 50px;
+background-color: rgb(0, 162, 255);
+position: relative;
+transform: rotate(45deg);
+}
+@keyframes movedown {
+from {
+left: 0;
+}
+to {
+left: 300px;
+}
+}
+.move {
+animation-name: movedown;
+animation-duration: 2s;
+animation-timing-function: ease-in-out;
+
+animation-fill-mode: forwards;
+}
+</style>
+</head>
+<body>
+<center><button id="animateButton">start</button>
+
+</center>
+<div id="diamond" class="animated-diamond"></div>
+<script>
+document.getElementById('animateButton').addEventListener('click', function() {
+const diamond = document.getElementById('diamond');
+diamond.classList.add('move');
+diamond.addEventListener('animationend', function() {
+diamond.classList.remove('move');
+}, { once: true });
+});
+</script>
+</body>
+</html>
